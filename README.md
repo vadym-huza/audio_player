@@ -1,4 +1,4 @@
-# rss-reader
+# HTML5 Audio player
 
 Demo: https://vadym-huza.github.io/audio_player/dist/index.html
 
