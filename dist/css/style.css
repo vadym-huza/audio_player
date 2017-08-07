@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #edeef0;
+  color: #333;
+}
+.player {
+  width: 600px;
+  margin: 20px auto 0 auto;
+}
+.controls {
+  height: 48px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px #ccc;
+  padding: 0 15px;
+}
+.play_pause {
+  position: relative;
+  float: left;
+  width: 50px;
+  height: 100%;
+  opacity: 0.9;
+}
+.play_pause_icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #577ca1;
+}
+.play_pause-play {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2228%22%20height%3D%2229%22%20viewBox%3D%220%200%2028%2029%22%3E%3Cg%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M11.8%2019.9C11.4%2020.2%2011%2020%2011%2019.5L11%208.5C11%208%2011.4%207.8%2011.8%208.1L19.5%2013.6C19.9%2013.8%2019.8%2014.2%2019.5%2014.4L11.8%2019.9Z%22%20fill%3D%22%23FFF%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+.play_pause-pause {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2228%22%20height%3D%2229%22%20viewBox%3D%2236%200%2028%2029%22%3E%3Cg%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M46%208.6C46%208.3%2046.3%208%2046.6%208L48.4%208C48.7%208%2049%208.3%2049%208.6L49%2019.4C49%2019.7%2048.7%2020%2048.4%2020L46.6%2020C46.3%2020%2046%2019.7%2046%2019.4L46%208.6ZM51%208.6C51%208.3%2051.3%208%2051.6%208L53.4%208C53.7%208%2054%208.3%2054%208.6L54%2019.4C54%2019.7%2053.7%2020%2053.4%2020L51.6%2020C51.3%2020%2051%2019.7%2051%2019.4L51%208.6Z%22%20fill%3D%22%23FFF%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+.play_pause:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.navigation {
+  float: left;
+  width: 70px;
+  height: 100%;
+}
+.navigation_prev {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  float: left;
+  opacity: 0.9;
+}
+.navigation_prev_icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 10px;
+  width: 9px;
+  background-position: 50%;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%229%22%20height%3D%2210%22%20viewBox%3D%2240%209%209%2010%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M42%2013.05V9.5c0-.27-.2-.5-.5-.5h-1c-.27%200-.5.23-.5.5v9c0%20.27.2.5.5.5h1c.27%200%20.5-.23.5-.5v-3.55l6.15%203.9c.47.3.85.1.85-.45V9.6c0-.55-.38-.75-.85-.45L42%2013.05z%22%20fill%3D%22%235E80A7%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E");
+}
+.navigation_prev:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.navigation_next {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  float: left;
+  opacity: 0.9;
+}
+.navigation_next_icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 10px;
+  width: 9px;
+  background-position: 50%;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%229%22%20height%3D%2210%22%20viewBox%3D%2259%209%209%2010%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M66%2013.05V9.5c0-.27.2-.5.5-.5h1c.27%200%20.5.23.5.5v9c0%20.27-.2.5-.5.5h-1c-.27%200-.5-.23-.5-.5v-3.55l-6.15%203.9c-.47.3-.85.1-.85-.45V9.6c0-.55.38-.75.85-.45l6.15%203.9z%22%20fill%3D%22%235E80A7%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E");
+}
+.navigation_next:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.progress_bar {
+  float: left;
+  width: 450px;
+  height: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.progress_bar_title {
+  float: left;
+  height: 26px;
+  width: 100%;
+  font-size: 15px;
+  line-height: 40px;
+}
+.progress_bar_stripe {
+  float: left;
+  height: 22px;
+  width: 100%;
+  padding: 10px 0 10px 0;
+  box-sizing: border-box;
+}
+.progress_bar_stripe:hover {
+  cursor: pointer;
+}
+.progress_bar_container {
+  height: 100%;
+  background-color: #b8c7d7;
+}
+.progress_bar_container_percentage {
+  height: 100%;
+  width: 0;
+  background-color: #577ca1;
+}
+.playlist {
+  background-color: #fff;
+  box-shadow: 0 1px 2px #ccc;
+}
+.fileEntity {
+  padding: 15px;
+}
+.fileEntity_duration {
+  float: right;
+}
+.fileEntity:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+.fileEntity-active {
+  background-color: #eee;
+  transition: 0.3s all ease;
+}
